@@ -1,0 +1,61 @@
+﻿.line-box {
+    display: inline-block;
+    margin: 5px;
+}
+
+.line-icon {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+    .line-icon > div:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+.line {
+    height: 20px;
+    width: 150px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+
+.tweet {
+    margin-top: 20px;
+}
+
+.legend {
+    height: 15px;
+    width: 30px;
+    display: inline-block;
+    margin: 5px;
+}
+
+    .legend:nth-child(1) {
+        background-color: lightgreen;
+    }
+
+    .legend:nth-child(3) {
+        background-color: lightpink;
+        margin-left: 30px;
+    }
+
+    .legend > small {
+        float: left;
+    }

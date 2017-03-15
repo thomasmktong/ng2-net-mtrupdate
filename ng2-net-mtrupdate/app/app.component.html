@@ -1,0 +1,28 @@
+﻿<div class="legend-box">
+    <div class="legend"></div>
+    <div class="legend"><small>OKAY</small></div>
+    <div class="legend"></div>
+    <div class="legend"><small>FAIL</small></div>
+</div>
+<div>
+    <div class="line-box" *ngFor="let s of status">
+        <div class="line-icon" [style.background-color]="s.isNormal ? 'LightGreen' : 'lightpink'">
+            <div class="line" [style.background-color]="s.lineColor">
+                <div class="circle">
+                </div>
+            </div>
+            <div class="line-name">
+                {{s.lineName}}
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="tweet">
+        <h2>Related Tweets by <a href="https://twitter.com/mtrupdate" target="_blank">@mtrupdate</a>:</h2>
+    </div>
+    <div class="tweet" *ngFor="let s of status">
+        <span *ngIf="s.latestTweetStr" [innerHTML]="s.latestTweetStr"></span>
+        <span *ngIf="s.latestTweetDate"><small>- {{s.latestTweetDate | date: 'medium'}}</small></span>
+    </div>
+</div>

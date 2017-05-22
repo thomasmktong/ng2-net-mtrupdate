@@ -26,7 +26,7 @@ namespace ng2_net_mtrupdate.Controllers
             };
 
             var tweets = service.ListTweetsOnUserTimeline(options)
-                                .Where(t => t.Language.Equals("en"))
+                                .Where(t => t.Language.Equals("en") && t.CreatedDate > DateTime.Now.AddHours(-6) )
                                 .OrderBy(t => t.CreatedDate)
                                 .Select(t => new Tuple<string, DateTime>(t.TextAsHtml, t.CreatedDate))
                                 .ToList();

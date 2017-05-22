@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 // Imports
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
@@ -30,6 +31,10 @@ var StatusService = (function () {
                     case 'isline':
                         eachStatus.lineName = 'Island Line';
                         eachStatus.lineColor = '#007DC5';
+                        break;
+                    case 'siline':
+                        eachStatus.lineName = 'South Island Line';
+                        eachStatus.lineColor = '#c1cd23';
                         break;
                     case 'ktline':
                         eachStatus.lineName = 'Kwun Tong Line';

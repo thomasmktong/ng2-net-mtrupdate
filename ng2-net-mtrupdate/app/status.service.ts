@@ -26,6 +26,10 @@ export class StatusService {
                             eachStatus.lineName = 'Island Line';
                             eachStatus.lineColor = '#007DC5';
                             break;
+                        case 'siline':
+                            eachStatus.lineName = 'South Island Line';
+                            eachStatus.lineColor = '#c1cd23';
+                            break;
                         case 'ktline':
                             eachStatus.lineName = 'Kwun Tong Line';
                             eachStatus.lineColor = '#00AB4E';
